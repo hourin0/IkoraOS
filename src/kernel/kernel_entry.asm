@@ -6,6 +6,7 @@ jmp main
 %include "./src/kernel/globalvar.asm"
 
 %include "./src/kernel/programs/displayinfo.asm"
+%include "./src/kernel/programs/ksplash.asm"
 %include "./src/kernel/programs/inputhandler-simple.asm"
 
 [bits 32]

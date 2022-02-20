@@ -11,18 +11,25 @@ kernelmain:
 	mov ah,FOREREDL
 	mov bx,osname
 	call print32
-	mov bx,osver
+	mov bx,kernelver
 	call print32
-	mov bx,osarch
+	mov bx,kernelarch
 	call print32
 
 	call displayInfo
 
 	
 	mov ah,FOREWHITE	
-	call getstr32
-	mov bx,input
+	mov ebx,hahahehe
 	call print32
 
+	call newline32
+	call ksplash
 
 	jmp kernelmain
+
+hahahehe:
+	db "ksplash",0
+kernelname: db "Ikoeru",0
+kernelver: db "0.0.0.2Alpha",0
+kernelarch: db "i386",0

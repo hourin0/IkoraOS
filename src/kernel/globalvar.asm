@@ -46,5 +46,3 @@ islive db 1
 isroot db 0
 
 osname: db "IkoraOS",0
-osver: db "0.0.0.2Alpha",0
-osarch: db "i386",0
